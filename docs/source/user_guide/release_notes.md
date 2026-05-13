@@ -87,7 +87,6 @@ We're excited to announce the release of v0.18.0 for vLLM Ascend. This is the of
 - Add a new introduction for MiniMax-M2.5 and MiniMax-M2.7. [#8169](https://github.com/vllm-project/vllm-ascend/pull/8169)
 - Add preemption guidance in FAQs. [#8136](https://github.com/vllm-project/vllm-ascend/pull/8136)
 - Update the deployment and support documentation for GLM5, including parameter descriptions, best practices, and FAQs. [#7963](https://github.com/vllm-project/vllm-ascend/pull/7963) [#7909](https://github.com/vllm-project/vllm-ascend/pull/7909)
-- Update the Qwen3.5 user guide. [#7934](https://github.com/vllm-project/vllm-ascend/pull/7934)
 - Update the document configuration for DeepSeek-V3.2. [#7970](https://github.com/vllm-project/vllm-ascend/pull/7970)
 - Clean up documentation wording and grammar. [#8073](https://github.com/vllm-project/vllm-ascend/pull/8073)
 - Refreshed deployment and model docs for Kimi-K2.5, GLM-4.7, DeepSeek-V3.2, MiniMax-M2.5, and PD disaggregation guides. [#7371](https://github.com/vllm-project/vllm-ascend/pull/7371) [#7403](https://github.com/vllm-project/vllm-ascend/pull/7403) [#7292](https://github.com/vllm-project/vllm-ascend/pull/7292) [#7296](https://github.com/vllm-project/vllm-ascend/pull/7296) [#7300](https://github.com/vllm-project/vllm-ascend/pull/7300)
@@ -148,7 +147,6 @@ Please follow the [official doc](https://docs.vllm.ai/projects/ascend/en/latest)
 - **GLM4.7 C8 Support**: Support GLM4.7 with C8 (INT8 KV cache) scenarios ([#8174](https://github.com/vllm-project/vllm-ascend/pull/8174))
 - **Minitron-8B-Base Support**: Verified and supported nvidia/Minitron-8B-Base model ([#8157](https://github.com/vllm-project/vllm-ascend/pull/8157))
 - **Bailing Model Support**: Full support for Bailing MoE model with linear adaptation and ModelSlim quantization configuration ([#8657](https://github.com/vllm-project/vllm-ascend/pull/8657), [#8709](https://github.com/vllm-project/vllm-ascend/pull/8709))
-- **Qwen3.5 MoE Flash Comm**: Support Flash Comm for Qwen3.5 MoE models ([#7486](https://github.com/vllm-project/vllm-ascend/pull/7486))
 - **Initial MoE Support for MRv2**: Add initial MoE models support for Model Runner V2 ([#7922](https://github.com/vllm-project/vllm-ascend/pull/7922))
 - **Xlite Backend Expansion**:
     - XLite GLM-4.7 support ([#7935](https://github.com/vllm-project/vllm-ascend/pull/7935))
@@ -175,9 +173,7 @@ Please follow the [official doc](https://docs.vllm.ai/projects/ascend/en/latest)
 ### Hardware and Operator Support
 
 - **310P Enhancements**:
-    - Qwen3.5 model adaptation synchronized with main ([#8009](https://github.com/vllm-project/vllm-ascend/pull/8009))
     - Support W8A8 dynamic linear method ([#7725](https://github.com/vllm-project/vllm-ascend/pull/7725))
-    - Support shared experts path in fused MoE for Qwen3.5 ([#7674](https://github.com/vllm-project/vllm-ascend/pull/7674))
     - Add npu_causal_conv1d_310 AscendC Custom Op ([#7798](https://github.com/vllm-project/vllm-ascend/pull/7798))
     - Add recurrent_gated_delta_rule_310 AscendC Custom Op ([#7926](https://github.com/vllm-project/vllm-ascend/pull/7926))
 
@@ -193,7 +189,7 @@ Please follow the [official doc](https://docs.vllm.ai/projects/ascend/en/latest)
     - Optimize KV cache gathering by selecting blocks before all-gather ([#8050](https://github.com/vllm-project/vllm-ascend/pull/8050))
 - **Operator Optimizations**:
     - Optimize split_qkv_tp_rmsnorm_rope ops ([#8059](https://github.com/vllm-project/vllm-ascend/pull/8059))
-    - Optimize host-device sync problem in prefill phase for Qwen3Next/Qwen3.5 ([#7967](https://github.com/vllm-project/vllm-ascend/pull/7967))
+    - Optimize host-device sync problem in prefill phase for Qwen3Next ([#7967](https://github.com/vllm-project/vllm-ascend/pull/7967))
     - Reduce prefill KV all-gather communication for PCP/DCP (SFA) ([#8043](https://github.com/vllm-project/vllm-ascend/pull/8043))
     - Add penalty-related Triton kernel for better performance of penalties ([#7569](https://github.com/vllm-project/vllm-ascend/pull/7569))
 - **Triton Kernel Optimizations (model_runner_v2)**:
@@ -223,7 +219,6 @@ Please follow the [official doc](https://docs.vllm.ai/projects/ascend/en/latest)
     - GLM-5.1 model tutorial ([#8054](https://github.com/vllm-project/vllm-ascend/pull/8054))
     - GLM4.7 documentation update ([#8450](https://github.com/vllm-project/vllm-ascend/pull/8450))
     - GLM5 documentation with parameters and FAQs ([#7958](https://github.com/vllm-project/vllm-ascend/pull/7958), [#7850](https://github.com/vllm-project/vllm-ascend/pull/7850))
-    - Qwen3.5 user guide update ([#7866](https://github.com/vllm-project/vllm-ascend/pull/7866))
     - Kimi-K2.5 documentation update ([#7901](https://github.com/vllm-project/vllm-ascend/pull/7901))
     - Qwen3-Omni-30B-A3B-Thinking documentation ([#8628](https://github.com/vllm-project/vllm-ascend/pull/8628))
     - DeepSeekOCR2 documentation ([#8573](https://github.com/vllm-project/vllm-ascend/pull/8573))
@@ -244,8 +239,6 @@ Please follow the [official doc](https://docs.vllm.ai/projects/ascend/en/latest)
 - **GQA C8 Fullgraph**: Fixed a bug in GQA C8 fullgraph mode ([#8779](https://github.com/vllm-project/vllm-ascend/pull/8779))
 - **DSV3.1 W4A8 TTFT**: Revert change of `balance_flag` to fix DSV3.1 W4A8 TTFT degradation ([#8675](https://github.com/vllm-project/vllm-ascend/pull/8675))
 - **DSV3.1 Service Startup**: Fix DeepSeek-V3.1 service failed to start ([#8208](https://github.com/vllm-project/vllm-ascend/pull/8208))
-- **Qwen3.5 MoE High Concurrency**: Fix Qwen3.5 MoE FC1 error under high concurrency when dp>1 ([#8396](https://github.com/vllm-project/vllm-ascend/pull/8396))
-- **Qwen3.5 MoE Flash Comm**: Fix Qwen3.5 MoE flash comm v1 shared expert shape error of mtp layer on A2 ([#7683](https://github.com/vllm-project/vllm-ascend/pull/7683))
 - **Graph Capture OOM**: Fix the graph capturing OOM in model_runner_v2 ([#8111](https://github.com/vllm-project/vllm-ascend/pull/8111))
 - **DeepSeek 3.2 C8 Precision**: Fix DeepSeek 3.2 C8 precision by reverting quantization layers ([#7628](https://github.com/vllm-project/vllm-ascend/pull/7628))
 - **DeepSeek 3.2 DCP MTP**: Fix ds3.2 dcp mtp issues ([#7617](https://github.com/vllm-project/vllm-ascend/pull/7617))
@@ -342,7 +335,7 @@ This is the first release candidate of v0.18.0 for vLLM Ascend. Please follow th
 ### Performance
 
 - Optimized Triton operator recompilation to reduce redundant rebuilds and unnecessary recompilation triggered by function parameter optimization. [#7647](https://github.com/vllm-project/vllm-ascend/pull/7647) [#7645](https://github.com/vllm-project/vllm-ascend/pull/7645)
-- Optimized the Qwen3.5 and Qwen3-Next GDN prefill path by prebuilding chunk metadata, reducing host-device synchronization overhead. [#7487](https://github.com/vllm-project/vllm-ascend/pull/7487)
+- Optimized the Qwen3-Next GDN prefill path by prebuilding chunk metadata, reducing host-device synchronization overhead. [#7487](https://github.com/vllm-project/vllm-ascend/pull/7487)
 - Simplified the FIA prefill context merge path for better runtime efficiency. [#7293](https://github.com/vllm-project/vllm-ascend/pull/7293)
 
 ### Documentation
@@ -377,7 +370,6 @@ This is the first release candidate of v0.17.0 for vLLM Ascend. Please follow th
 ### Features
 
 - Auto-detect quantization format from model files, and remote model IDs (e.g., `org/model-name`) are also supported. `--quantization ascend` is not required now. [#7111](https://github.com/vllm-project/vllm-ascend/pull/7111)
-- Qwen3.5 is supported from this version on.
 - FlashLB algorithm for EPLB: supports per-step heat collection and multi-stage load balancing for better expert parallelism efficiency. [#6477](https://github.com/vllm-project/vllm-ascend/pull/6477)
 - LoRA with tensor parallel and `--fully-sharded-loras` is now fixed and working. [#6650](https://github.com/vllm-project/vllm-ascend/pull/6650)
 - LMCacheAscendConnector is added as a new KV cache pooling solution for Ascend. [#6882](https://github.com/vllm-project/vllm-ascend/pull/6882)
@@ -405,10 +397,8 @@ This is the first release candidate of v0.17.0 for vLLM Ascend. Please follow th
 - Fix GLM5-W8A8 precision issues caused by rotary quant MTP weights. [#7139](https://github.com/vllm-project/vllm-ascend/pull/7139)
 - Fix ngram graph replay accuracy error on 310P. [#7134](https://github.com/vllm-project/vllm-ascend/pull/7134)
 - Fix FIA pad logic in graph mode after upstream vLLM change. [#7144](https://github.com/vllm-project/vllm-ascend/pull/7144)
-- Fix a precision issue caused by wrong KV cache reshape on Qwen3.5. [#7209](https://github.com/vllm-project/vllm-ascend/pull/7209)
 - Fix extra processes spawned on rank0 device. [#7107](https://github.com/vllm-project/vllm-ascend/pull/7107)
 - Graph capture failures now properly raise exceptions for easier debugging. [#5644](https://github.com/vllm-project/vllm-ascend/pull/5644)
-- Fix Qwen3.5 model by replacing torch_npu.npu_recurrent_gated_delta_rule by fused_recurrent_gated_delta_rule. [#7109](https://github.com/vllm-project/vllm-ascend/pull/7109)
 - Fix the bug when running Qwen3-Reranker-0.6B with LoRA. [#7156](https://github.com/vllm-project/vllm-ascend/pull/7156)
 
 ### Known Issue

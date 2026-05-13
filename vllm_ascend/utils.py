@@ -548,8 +548,8 @@ def update_aclgraph_sizes(vllm_config: VllmConfig) -> None:
     # For suffix decoding, use the suffix path when no draft_model_config is provided.
     if (spec := vllm_config.speculative_config) and (draft := spec.draft_model_config):
         # Use get_total_num_hidden_layers() to correctly handle MTP models,
-        # which store layer count in num_nextn_predict_layers or
-        # mtp_num_hidden_layers (for Qwen3.5) instead of num_hidden_layers.
+        # which store layer count in num_nextn_predict_layers instead of
+        # num_hidden_layers.
         resources_per_graph += draft.get_total_num_hidden_layers() + 1
 
     # TODO: Find out whether we need to take into account the pp_size

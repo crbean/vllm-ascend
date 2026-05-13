@@ -463,26 +463,6 @@ msgid "[Qwen3-VL-MOE](../../tutorials/models/Qwen3-VL-235B-A22B-Instruct.md)"
 msgstr "[Qwen3-VL-MOE](../../tutorials/models/Qwen3-VL-235B-A22B-Instruct.md)"
 
 #: ../../source/user_guide/support_matrix/supported_models.md
-msgid "Qwen3.5-397B-A17B"
-msgstr "Qwen3.5-397B-A17B"
-
-#: ../../source/user_guide/support_matrix/supported_models.md
-msgid "1010000"
-msgstr "1010000"
-
-#: ../../source/user_guide/support_matrix/supported_models.md
-msgid "[Qwen3.5-397B-A17B](../../tutorials/models/Qwen3.5-397B-A17B.md)"
-msgstr "[Qwen3.5-397B-A17B](../../tutorials/models/Qwen3.5-397B-A17B.md)"
-
-#: ../../source/user_guide/support_matrix/supported_models.md
-msgid "Qwen3.5-27B"
-msgstr "Qwen3.5-27B"
-
-#: ../../source/user_guide/support_matrix/supported_models.md
-msgid "[Qwen3.5-27B](../../tutorials/models/Qwen3.5-27B.md)"
-msgstr "[Qwen3.5-27B](../../tutorials/models/Qwen3.5-27B.md)"
-
-#: ../../source/user_guide/support_matrix/supported_models.md
 msgid "Qwen3-Omni-30B-A3B-Thinking"
 msgstr "Qwen3-Omni-30B-A3B-Thinking"
 

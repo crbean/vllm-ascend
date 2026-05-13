@@ -670,13 +670,6 @@ msgid ""
 msgstr ""
 "更新了 GLM5 的部署和支持文档，包括参数描述、最佳实践和常见问题解答。[#7963](https://github.com/vllm-project/vllm-ascend/pull/7963) [#7909](https://github.com/vllm-project/vllm-ascend/pull/7909)"
 
-#: ../../source/user_guide/release_notes.md:90
-msgid ""
-"Update the Qwen3.5 user guide. [#7934](https://github.com/vllm-project"
-"/vllm-ascend/pull/7934)"
-msgstr ""
-"更新了 Qwen3.5 用户指南。[#7934](https://github.com/vllm-project/vllm-ascend/pull/7934)"
-
 #: ../../source/user_guide/release_notes.md:91
 msgid ""
 "Update the document configuration for DeepSeek-V3.2. "
@@ -1075,13 +1068,6 @@ msgid ""
 msgstr ""
 "**Bailing 模型支持**：全面支持 Bailing MoE 模型，包含线性适配和 ModelSlim 量化配置。([#8657](https://github.com/vllm-project/vllm-ascend/pull/8657), [#8709](https://github.com/vllm-project/vllm-ascend/pull/8709))"
 
-#: ../../source/user_guide/release_notes.md:151
-msgid ""
-"**Qwen3.5 MoE Flash Comm**: Support Flash Comm for Qwen3.5 MoE models "
-"([#7486](https://github.com/vllm-project/vllm-ascend/pull/7486))"
-msgstr ""
-"**Qwen3.5 MoE Flash Comm**：为 Qwen3.5 MoE 模型支持 Flash Comm。([#7486](https://github.com/vllm-project/vllm-ascend/pull/7486))"
-
 #: ../../source/user_guide/release_notes.md:152
 msgid ""
 "**Initial MoE Support for MRv2**: Add initial MoE models support for "
@@ -1248,14 +1234,6 @@ msgstr ""
 msgid "**310P Enhancements**:"
 msgstr "**310P 增强功能**："
 
-#: ../../source/user_guide/release_notes.md:178
-msgid ""
-"Qwen3.5 model adaptation synchronized with main "
-"([#8009](https://github.com/vllm-project/vllm-ascend/pull/8009))"
-msgstr ""
-"Qwen3.5 模型适配与主线同步 ([#8009](https://github.com/vllm-project/vllm-"
-"ascend/pull/8009))"
-
 #: ../../source/user_guide/release_notes.md:179
 msgid ""
 "Support W8A8 dynamic linear method ([#7725](https://github.com/vllm-"
@@ -1263,14 +1241,6 @@ msgid ""
 msgstr ""
 "支持 W8A8 动态线性方法 ([#7725](https://github.com/vllm-project/vllm-"
 "ascend/pull/7725))"
-
-#: ../../source/user_guide/release_notes.md:180
-msgid ""
-"Support shared experts path in fused MoE for Qwen3.5 "
-"([#7674](https://github.com/vllm-project/vllm-ascend/pull/7674))"
-msgstr ""
-"在 Qwen3.5 的融合 MoE 中支持共享专家路径 ([#7674](https://github.com/vllm-project"
-"/vllm-ascend/pull/7674))"
 
 #: ../../source/user_guide/release_notes.md:181
 msgid ""
@@ -1360,10 +1330,10 @@ msgstr ""
 
 #: ../../source/user_guide/release_notes.md:196
 msgid ""
-"Optimize host-device sync problem in prefill phase for Qwen3Next/Qwen3.5 "
+"Optimize host-device sync problem in prefill phase for Qwen3Next "
 "([#7967](https://github.com/vllm-project/vllm-ascend/pull/7967))"
 msgstr ""
-"优化 Qwen3Next/Qwen3.5 预填充阶段的主机-设备同步问题 ([#7967](https://github.com/vllm-"
+"优化 Qwen3Next 预填充阶段的主机-设备同步问题 ([#7967](https://github.com/vllm-"
 "project/vllm-ascend/pull/7967))"
 
 #: ../../source/user_guide/release_notes.md:197
@@ -1549,14 +1519,6 @@ msgstr ""
 "ascend/pull/7958), [#7850](https://github.com/vllm-project/vllm-"
 "ascend/pull/7850))"
 
-#: ../../source/user_guide/release_notes.md:226
-msgid ""
-"Qwen3.5 user guide update ([#7866](https://github.com/vllm-project/vllm-"
-"ascend/pull/7866))"
-msgstr ""
-"Qwen3.5 用户指南更新 ([#7866](https://github.com/vllm-project/vllm-"
-"ascend/pull/7866))"
-
 #: ../../source/user_guide/release_notes.md:227
 msgid ""
 "Kimi-K2.5 documentation update ([#7901](https://github.com/vllm-project"
@@ -1676,24 +1638,6 @@ msgstr ""
 "**DSV3.1 服务启动**：修复 DeepSeek-V3.1 服务启动失败的问题 ([#8208](https://github.com"
 "/vllm-project/vllm-ascend/pull/8208))"
 
-#: ../../source/user_guide/release_notes.md:247
-msgid ""
-"**Qwen3.5 MoE High Concurrency**: Fix Qwen3.5 MoE FC1 error under high "
-"concurrency when dp>1 ([#8396](https://github.com/vllm-project/vllm-"
-"ascend/pull/8396))"
-msgstr ""
-"**Qwen3.5 MoE 高并发**：修复 dp>1 时高并发下 Qwen3.5 MoE FC1 错误 "
-"([#8396](https://github.com/vllm-project/vllm-ascend/pull/8396))"
-
-#: ../../source/user_guide/release_notes.md:248
-msgid ""
-"**Qwen3.5 MoE Flash Comm**: Fix Qwen3.5 MoE flash comm v1 shared expert "
-"shape error of mtp layer on A2 ([#7683](https://github.com/vllm-project"
-"/vllm-ascend/pull/7683))"
-msgstr ""
-"**Qwen3.5 MoE Flash Comm**：修复 A2 上 Qwen3.5 MoE flash comm v1 mtp "
-"层共享专家形状错误 ([#7683](https://github.com/vllm-project/vllm-"
-"ascend/pull/7683))"
 
 #: ../../source/user_guide/release_notes.md:249
 msgid ""
@@ -2370,11 +2314,11 @@ msgstr ""
 
 #: ../../source/user_guide/release_notes.md:345
 msgid ""
-"Optimized the Qwen3.5 and Qwen3-Next GDN prefill path by prebuilding "
+"Optimized the Qwen3-Next GDN prefill path by prebuilding "
 "chunk metadata, reducing host-device synchronization overhead. "
 "[#7487](https://github.com/vllm-project/vllm-ascend/pull/7487)"
 msgstr ""
-"通过预构建分块元数据，优化了 Qwen3.5 和 Qwen3-Next GDN "
+"通过预构建分块元数据，优化了 Qwen3-Next GDN "
 "的预填充路径，减少了主机-设备同步开销。[#7487](https://github.com/vllm-project/vllm-"
 "ascend/pull/7487)"
 
@@ -2505,10 +2449,6 @@ msgid ""
 msgstr ""
 "支持从模型文件自动检测量化格式，同时也支持远程模型ID（例如 `org/model-name`）。现在不再需要 `--quantization "
 "ascend` 参数。[#7111](https://github.com/vllm-project/vllm-ascend/pull/7111)"
-
-#: ../../source/user_guide/release_notes.md:380
-msgid "Qwen3.5 is supported from this version on."
-msgstr "从本版本开始支持 Qwen3.5。"
 
 #: ../../source/user_guide/release_notes.md:381
 msgid ""
@@ -2655,14 +2595,6 @@ msgstr ""
 "在上游 vLLM 变更后，修复了图模式下的 FIA 填充逻辑。[#7144](https://github.com/vllm-project"
 "/vllm-ascend/pull/7144)"
 
-#: ../../source/user_guide/release_notes.md:408
-msgid ""
-"Fix a precision issue caused by wrong KV cache reshape on Qwen3.5. "
-"[#7209](https://github.com/vllm-project/vllm-ascend/pull/7209)"
-msgstr ""
-"修复了 Qwen3.5 上因 KV 缓存重塑错误导致的精度问题。[#7209](https://github.com/vllm-project"
-"/vllm-ascend/pull/7209)"
-
 #: ../../source/user_guide/release_notes.md:409
 msgid ""
 "Fix extra processes spawned on rank0 device. [#7107](https://github.com"
@@ -2678,16 +2610,6 @@ msgid ""
 msgstr ""
 "图捕获失败现在会正确抛出异常，便于调试。[#5644](https://github.com/vllm-project/vllm-"
 "ascend/pull/5644)"
-
-#: ../../source/user_guide/release_notes.md:411
-msgid ""
-"Fix Qwen3.5 model by replacing torch_npu.npu_recurrent_gated_delta_rule "
-"by fused_recurrent_gated_delta_rule. [#7109](https://github.com/vllm-"
-"project/vllm-ascend/pull/7109)"
-msgstr ""
-"通过将 `torch_npu.npu_recurrent_gated_delta_rule` 替换为 "
-"`fused_recurrent_gated_delta_rule` 来修复 Qwen3.5 "
-"模型。[#7109](https://github.com/vllm-project/vllm-ascend/pull/7109)"
 
 #: ../../source/user_guide/release_notes.md:412
 msgid ""

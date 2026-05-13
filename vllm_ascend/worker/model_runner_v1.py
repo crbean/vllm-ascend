@@ -3350,7 +3350,7 @@ class NPUModelRunner(GPUModelRunner):
                             sum_page_size_bytes = raw_k_tensor.numel() + raw_v_tensor.numel() + raw_dsa_k_tensor.numel()
                     elif self.use_hybrid_blocks and self.hybrid_with_attn_and_mamba:
                         # Currently, we ensure that the same kvcache format is used even if there
-                        # is no shared layer, such as the full attention mtp layer of qwen3.5, etc.
+                        # is no shared layer, such as the full attention mtp layer.
                         raw_k_tensor, raw_v_tensor = kv_cache_raw_tensors[layer_name], kv_cache_raw_tensors[layer_name]
                         sum_page_size_bytes = raw_k_tensor.numel()
                     elif "cache_only_layers" in layer_name:

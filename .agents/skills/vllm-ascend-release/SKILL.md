@@ -679,7 +679,7 @@ vLLM Ascend v0.18.0rc1版本发布🎉 此版本是针对vLLM v0.18.0系列版�
 🆕 VL MoE模型支持SP，`sp_threshold`替换为vLLM原生`sp_min_token_num`
 🆕 Qwen VL模型支持`w8a8_mxfp8`量化
 🚀 Triton算子重编译优化，提升算子性能
-🚀 Qwen3.5/Qwen3-Next GDN prefill路径优化，预构建chunk metadata减少h2d同步开销
+🚀 Qwen3-Next GDN prefill路径优化，预构建chunk metadata减少h2d同步开销
 🚀 FIA prefill context merge路径简化，提升运行时效率
 🐞 torch-npu 和 triton-ascend 依赖版本更新，请参考官方release note
 🐞 修复PD分离场景decode节点因DP节点shape不对齐导致卡住的问题

@@ -144,8 +144,6 @@ e2e-multicard-2-cards:
 e2e-multicard-4-cards:
 - name: tests/e2e/multicard/4-cards/test_qwen3_next.py
   estimated_time: 1296
-- name: tests/e2e/multicard/4-cards/test_qwen3_5.py
-  estimated_time: 1303
 - name: tests/e2e/multicard/4-cards/test_data_parallel_tp2.py
   estimated_time: 248
 - name: tests/e2e/multicard/4-cards/test_kimi_k2.py

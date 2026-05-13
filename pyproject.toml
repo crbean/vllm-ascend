@@ -116,8 +116,6 @@ exclude = [
     "docs/source/tutorials/models/Qwen3-VL-30B-A3B-Instruct.md",
     "docs/source/tutorials/models/Qwen3-VL-Embedding.md",
     "docs/source/tutorials/models/Qwen3-VL-Reranker.md",
-    "docs/source/tutorials/models/Qwen3.5-27B.md",
-    "docs/source/tutorials/models/Qwen3.5-397B-A17B.md",
     "docs/source/tutorials/models/Qwen3_embedding.md",
     "docs/source/tutorials/models/Qwen3_reranker.md",
     "docs/source/tutorials/models/index.md",
