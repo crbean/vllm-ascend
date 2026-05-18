@@ -1,0 +1,21 @@
+[
+  {
+    "type": "throughput",
+    "scenario": "tp4_short_1",
+    "data": {
+      "tp_size": 4,
+      "input_len": 128,
+      "output_len": 128,
+      "num_prompts": 1,
+      "total_time_s": 32.083,
+      "total_input_tokens": 191,
+      "total_output_tokens": 128,
+      "total_tokens": 319,
+      "throughput_tokens_per_s": 9.94,
+      "output_throughput_tokens_per_s": 3.99,
+      "avg_latency_ms_per_token": 250.645,
+      "peak_hbm_mb": 0,
+      "init_time_s": 126.7
+    }
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "type": "throughput",
+    "scenario": "tp8_short_1",
+    "data": {
+      "tp_size": 8,
+      "input_len": 128,
+      "output_len": 128,
+      "num_prompts": 1,
+      "total_time_s": 52.769,
+      "total_input_tokens": 191,
+      "total_output_tokens": 128,
+      "total_tokens": 319,
+      "throughput_tokens_per_s": 6.05,
+      "output_throughput_tokens_per_s": 2.43,
+      "avg_latency_ms_per_token": 412.254,
+      "peak_hbm_mb": 60010,
+      "init_time_s": 137.2
+    }
+  }
+]
